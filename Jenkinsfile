@@ -4,7 +4,7 @@ pipeline {
     stages {   
         stage('Development branch') { 
             steps { 
-               sh 'echo "This is master branch"' 
+               sh 'echo "This is Development branch"' 
             }
         }
      
@@ -16,7 +16,7 @@ pipeline {
 
         stage("Deploy application") { 
              steps { 
-                sh 'echo "Deploying application..."'
+                sh 'echo "Development application..."'
             }
         }  
     }
